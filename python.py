@@ -1,3 +1,4 @@
+# Oppgave 1
 telefonbok = []
 person1 = {
     "navn": "sverrre",
@@ -9,8 +10,23 @@ person2 = {
 }
 telefonbok.append(person1)
 telefonbok.append(person2)
-
+# Oppgave 2
 def vis_alle():
     for person in telefonbok:
         print (f"Navn: {person["navn"]}, Nummer: {person["nummer"]}")
 vis_alle()
+# Oppgave 3
+def legg_til():
+    leggtilnavn = input("Skriv inn navn: ")
+    leggtilnummer = input("Skriv inn nummer: ")
+          
+    nyperson = {
+    "navn": leggtilnavn,
+    "nummer": leggtilnummer
+}
+    print(f"Navn ble lagt til {nyperson["navn"]}, Nummer ble lagt til {nyperson["nummer"]}")
+
+    telefonbok.append(nyperson)
+
+legg_til()
+# Oppgave 4
