@@ -9,4 +9,3 @@ person2 = {
 }
 telefonbok.append(person1["navn"])
 telefonbok.append(person2["navn"])
-print(telefonbok)
