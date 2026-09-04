@@ -7,3 +7,6 @@ person2 = {
     "navn":"andreas",
     "nummer":"+47 "
 }
+telefonbok.append(person1["navn"])
+telefonbok.append(person2["navn"])
+print(telefonbok)
