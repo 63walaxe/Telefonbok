@@ -59,3 +59,4 @@ while True:
             break
         else:
             print("Ugyldig valg.")
+# Oppgave 6
