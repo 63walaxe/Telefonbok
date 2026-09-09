@@ -30,3 +30,14 @@ def legg_til():
 
 legg_til()
 # Oppgave 4
+def søk():
+    navnsøk = input("Skriv inn et navn: ")
+    for sjekk in telefonbok:
+        if navnsøk.lower() == sjekk["navn"].lower():
+            print(f"Vi har {sjekk['navn']} i databasen vår, telefonnummer: {sjekk["nummer"]}")
+            break
+    else:
+        print(f"Vi har ikke {navnsøk} i databasen vår")
+
+søk()
+# Oppgave 5
