@@ -41,3 +41,21 @@ def søk():
 
 søk()
 # Oppgave 5
+while True:
+        print("\n1. Vis alle") #/n er det som for det til å se pent ut, lærte det av sverre/jakob/hannah/matthias
+        print("2. Legg til ny")
+        print("3. Søk")
+        print("4. Avslutt")
+        valg = input("Hva ønsker du å gjøre? (skriv tall eller navn på valg): ").lower()
+
+        if valg in ("1", "vis alle"):
+            vis_alle()
+        elif valg in ("2", "legg til ny"):
+            legg_til()
+        elif valg in ("3", "søk"):
+            søk()
+        elif valg == "4":
+            print("Programmet avsluttes.")
+            break
+        else:
+            print("Ugyldig valg.")
